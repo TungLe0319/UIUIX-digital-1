@@ -95,8 +95,7 @@ onBeforeUnmount(() => {
       <span class="nav-indicator"></span>
     </div>
     <div class="flex items-center justify-center space-x-4">
-      <ColorMode />
-      <ProfileDropDown />
+      
       <a href="https://github.com/TungLe0319">
         <Icon name="skill-icons:github-dark" class="text-3xl" />
       </a>

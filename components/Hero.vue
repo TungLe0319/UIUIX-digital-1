@@ -8,7 +8,7 @@
         <h2 class="font-serif text-3xl font-bold  lg:text-4xl">
           Crafting Seamless Solutions for Unmatched Online Success
         </h2>
-   <IconList :items="iconListItems" iconSize="28px">
+   <!-- <IconList :items="iconListItems" iconSize="28px">
       <template #item-0>
         {{ iconListItems[0].text }}
       </template>
@@ -18,11 +18,33 @@
       <template #item-2>
         {{ iconListItems[2].text }}
       </template>
-    </IconList>
-        <ButtonWithIcon class="bg-red-500 rounded-full hover:bg-red-400" iconName="ic:baseline-play-arrow" iconSize="100"
+    </IconList> -->
+        <!-- <ButtonWithIcon class="bg-red-500 rounded-full hover:bg-red-400" iconName="ic:baseline-play-arrow" iconSize="100"
           iconPosition="start">
           See the Transformation
-        </ButtonWithIcon>
+        </ButtonWithIcon> -->
+
+        <IconList :items="iconListItems" iconSize="28px">
+          <template #item-0>
+            {{ iconListItems[0].text }}
+          </template>
+          <template #item-1>
+            {{ iconListItems[1].text }}
+          </template>
+          <template #item-2>
+            {{ iconListItems[2].text }}
+          </template>
+
+        </IconList>
+        <div class="flex justify-center items-center gap-2">
+          <button class="bg-red-500 rounded-full hover:bg-red-400 px-5 py-2 text-white font-bold">
+            See the Transformation
+          </button>
+          <button class="bg-white rounded-full hover:bg-gray-200 px-5 py-2 text-black font-bold">
+            Get Started
+          </button>
+    <ButtonRipple>Click me</ButtonRipple>
+          </div>
       </div>
       <div class="w-1/3">
         <svg xmlns="http://www.w3.org/2000/svg" id="currentIllo" width="600" height="463.64" viewBox="0 0 949.85 463.64"
@@ -144,11 +166,12 @@
 </div></template>
 
 <script lang="ts" setup>
-import ButtonWithIcon from "../../../packages/Shared-Components/Buttons/ButtonWithIcon.vue";
-import IconList from "../../../packages/Shared-Components/Lists/IconList.vue";
+import IconList from './Globals/IconList.vue';
+import ButtonRipple from './Globals/ButtonRipple.vue';
+// import ButtonWithIcon from "../../../packages/Shared-Components/Buttons/ButtonWithIcon.vue";
 
 const iconListItems = [
-  { icon: 'mdi:check-bold', text: 'Boosted Engagement' },
+  { icon: 'mdi:check-bold', text: 'Boosted Engagement',iconColor:'text-red-500' },
   { icon: 'mdi:check-bold', text: 'Enhanced User Experience' },
   { icon: 'mdi:check-bold', text: 'Skyrocketed Conversions' },
 ];
