@@ -144,8 +144,8 @@
 </div></template>
 
 <script lang="ts" setup>
-import ButtonWithIcon from "../../Shared-Components/vue/ButtonWithIcon.vue";
-import IconList from "../../Shared-Components/vue/Lists/IconList.vue";
+import ButtonWithIcon from "../../../packages/Shared-Components/Buttons/ButtonWithIcon.vue";
+import IconList from "../../../packages/Shared-Components/Lists/IconList.vue";
 
 const iconListItems = [
   { icon: 'mdi:check-bold', text: 'Boosted Engagement' },

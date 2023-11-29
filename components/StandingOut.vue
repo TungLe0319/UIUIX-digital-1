@@ -376,7 +376,7 @@
 </template>
 
 <script lang="ts" setup>
-import SectionHeader from '../../Shared-Components/vue/SectionHeader.vue';
+;
 
 </script>
 
