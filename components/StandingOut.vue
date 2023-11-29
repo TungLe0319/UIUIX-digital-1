@@ -1,9 +1,9 @@
 <template>
   <div
-    class="flex w-full flex-col items-center justify-center gap-4 bg-white p-10 lg:flex-row"
+    class="flex w-full flex-col items-center justify-center gap-4 bg-white p-10  lg:flex-row"
   >
     <div
-      class="order-1 flex   w-full lg:w-1/2 items-center justify-center lg:order-2 lg:px-10"
+      class="order-1 flex   w-full lg:w-1/3 items-center justify-center lg:order-2 lg:px-10"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -309,20 +309,18 @@
       class="order-2 flex flex-col items-center justify-center pr-10 lg:order-1 lg:w-1/2"
     >
       <div class="mb-4 flex flex-col items-center justify-center space-y-6">
-        <h3 class="font-serif uppercase text-orange-400">Why choose us</h3>
-        <h1 class="font-serif text-5xl font-bold">
-          What we do and why you would use our services
-        </h1>
-        <div class=" ">
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+
+        <SectionHeader
+        title="What we do and why it would fit your needs"
+        header="Why choose us"
+        content="  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Repudiandae modi doloremque, deserunt optio harum, officia veniam
             voluptatibus expedita architecto quibusdam perspiciatis nam rem.
             Ratione delectus aut a modi suscipit accusamus atque assumenda
             aliquid ipsum aperiam, earum praesentium quod dolores sapiente quo
-            explicabo vero commodi. Odio repudiandae neque nobis animi nihil!
-          </p>
-        </div>
+            explicabo vero commodi. Odio repudiandae neque nobis animi nihil!"/>
+     
+       
       </div>
       <div class="space-y-5">
         <div class="flex">
@@ -377,6 +375,9 @@
   </div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import SectionHeader from '../../Shared-Components/vue/SectionHeader.vue';
+
+</script>
 
 <style></style>
