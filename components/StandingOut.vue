@@ -25,7 +25,7 @@ const benefits = [
 </script>
 
 <template>
-  <main class="p-10 space-y-10 lg:space-y-0">
+  <main class=" space-y-10 lg:space-y-0">
     <SectionHeader title="Benefits of our Service" header="What we provide" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum deserunt, porro quisquam rerum soluta laborum" />
     <section
       v-for="(benefit, index) in benefits" :key="benefit.title" v-motion-fade-visible

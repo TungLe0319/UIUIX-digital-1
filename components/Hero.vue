@@ -5,14 +5,14 @@ import Button from './Globals/Button.vue'
 // import ButtonWithIcon from "../../../packages/Shared-Components/Buttons/ButtonWithIcon.vue";
 
 const iconListItems = [
-  { icon: 'mdi:check-bold', text: 'Boosted Engagement', iconColor: 'rgb(245 158 11)' },
-  { icon: 'mdi:check-bold', text: 'Enhanced User Experience', iconColor: 'rgb(245 158 11)' },
-  { icon: 'mdi:check-bold', text: 'Skyrocketed Conversions', iconColor: 'rgb(245 158 11)' },
+  { icon: 'mdi:check-bold', text: 'Boosted Engagement', iconColor: '#ef626cff' },
+  { icon: 'mdi:check-bold', text: 'Enhanced User Experience', iconColor: '#ef626cff' },
+  { icon: 'mdi:check-bold', text: 'Skyrocketed Conversions', iconColor: '#ef626cff' },
 ]
 </script>
 
 <template>
-  <div class="  min-h-screen flex items-center justify-center relative">
+  <div class="  min-h-screen flex items-center justify-center relative ">
     <div class="lg:flex justify-center items-center gap-2 w-full px-5  lg:px-10 ">
       <div class=" text-start lg:w-2/3 flex flex-col items-start justify-center space-y-5 mb-10">
         <h1 class=" text-white font-serif text-5xl font-bold  lg:text-7xl     drop-shadow-md">
@@ -20,7 +20,7 @@ const iconListItems = [
         </h1>
 
        
-        <h2 class="font-serif text-3xl font-bold  lg:text-4xl ">
+        <h2 class="font-serif text-3xl font-bold  text-[var(--lavender-blush)] lg:text-4xl ">
           Crafting Seamless Solutions for Unmatched Online Success
         </h2>
         <Button class=" rounded-full shadow-md flex items-center justify-center gap-2">

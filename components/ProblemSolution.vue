@@ -4,9 +4,9 @@
 
 <template>
   <div class="flex w-full flex-col items-center justify-center  p-10 lg:flex-row ">
-    <div class="flex w-full items-center justify-center lg:w-1/2 mb-10 lg:mb-0">
+    <div class="   flex w-full items-center justify-center lg:w-1/2 mb-10 lg:mb-0">
       <iframe
-        class="rounded-md shadow-2xl" width="560" height="315"
+        class="rounded-md shadow-2xl w-full"  height="515"
         src="https://www.youtube.com/embed/NpEaa2P7qZI?si=AYGfNW0zFeyJNnVg" title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
