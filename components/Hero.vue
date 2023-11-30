@@ -12,20 +12,18 @@ const iconListItems = [
 </script>
 
 <template>
-  <div class=" h-[100vh] flex items-center justify-center relative">
-    <div class="flex justify-center items-center gap-2 w-full px-5 lg:px-10 ">
-      <div class=" text-start w-2/3 flex flex-col items-start justify-center space-y-5 mb-10">
-        <h1 class="font-serif text-4xl font-bold  lg:text-7xl    text-purple-800 drop-shadow-md">
+  <div class="  min-h-screen flex items-center justify-center relative">
+    <div class="lg:flex justify-center items-center gap-2 w-full px-5  lg:px-10 ">
+      <div class=" text-start lg:w-2/3 flex flex-col items-start justify-center space-y-5 mb-10">
+        <h1 class=" text-white font-serif text-5xl font-bold  lg:text-7xl     drop-shadow-md">
           Elevate Your Digital Presence
         </h1>
 
-        <LeButton class="bg-amber-400">
-          234234
-        </LeButton>
-        <h2 class="font-serif text-3xl font-bold  lg:text-4xl text-purple-950">
+       
+        <h2 class="font-serif text-3xl font-bold  lg:text-4xl ">
           Crafting Seamless Solutions for Unmatched Online Success
         </h2>
-        <Button class="bg-amber-500 text-white rounded-full shadow-md flex items-center justify-center gap-2">
+        <Button class=" rounded-full shadow-md flex items-center justify-center gap-2">
           <span>See the Transformation</span>
           <Icon name="material-symbols:arrow-right-alt" size="30" />
         </Button>
@@ -42,7 +40,7 @@ const iconListItems = [
         </IconList>
         <div class="flex justify-center items-center gap-2" />
       </div>
-      <div class="w-1/2 items-center flex justify-center">
+      <div class="lg:w-1/2 items-center flex justify-center">
         <svg
           id="currentIllo" xmlns="http://www.w3.org/2000/svg" width="500" height="463.64" viewBox="0 0 949.85 463.64"
           class="injected-svg DownloadModal__ImageFile-sc-p17csy-5 iIfSkb grid_media"

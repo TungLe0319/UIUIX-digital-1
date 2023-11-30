@@ -1,87 +1,67 @@
 <script lang="ts" setup></script>
 
 <template>
-  <footer class="bg-blueGray-200 relative pb-6 pt-8">
-    <div class="container mx-auto px-4">
-      <div class="flex flex-wrap text-left lg:text-left">
-        <div class="w-full px-4 lg:w-6/12">
-          <h4 class="font-serif text-3xl font-bold">
-            Let's keep in touch!
-          </h4>
-          <h5 class="text-blueGray-600 mb-2 mt-0 text-lg">
-            Find us on any of these platforms
-          </h5>
-          <div class="mb-6 mt-6 flex gap-5 lg:mb-0">
-            <a href="#">
-              <Icon name="pajamas:twitter" class="text-3xl" />
-            </a>
-            <a href="#">
-              <Icon name="logos:facebook" class="text-3xl" />
-            </a>
-            <a href="#">
-              <Icon name="skill-icons:instagram" class="text-3xl" />
-            </a>
-            <a href="https://github.com/TungLe0319">
-              <Icon name="skill-icons:github-dark" class="text-3xl" />
-            </a>
-          </div>
-        </div>
-        <div class="w-full px-4 lg:w-6/12">
-          <div class="items-top mb-6 flex flex-wrap">
-            <div class="ml-auto w-full px-4 lg:w-4/12">
-              <span class="text-md mb-2 block font-bold uppercase">Useful Links</span>
-              <ul class="list-unstyled">
-                <li>
-                  <a href="#">About Us</a>
-                </li>
-                <li>
-                  <a href="#">Blog</a>
-                </li>
-                <li>
-                  <a href="#">Github</a>
-                </li>
-                <li>
-                  <a href="#">Free Products</a>
-                </li>
+  <footer >
+  
+
+
+    <div class="">
+      <div class="max-w-screen-lg py-10 px-4 sm:px-6 text-gray-800 sm:flex justify-between mx-auto">
+          <div class="p-5 sm:w-2/12 border-r">
+              <h3 class="text-xl uppercase  font-bold">Menu</h3>
+              <ul>
+                  <li class="my-2">
+                      <a class="" href="#">Home</a>
+                  </li>
+                  <li class="my-2">
+                      <a class="" href="#">Services</a>
+                  </li>
+                  <li class="my-2">
+                      <a class="" href="#">Products</a>
+                  </li>
+                  <li class="my-2">
+                      <a class="" href="#">Pricing</a>
+                  </li>
               </ul>
-            </div>
-            <div class="w-full px-4 lg:w-4/12">
-              <span class="text-md mb-2 block font-bold uppercase">Other Resources</span>
-              <ul class="list-unstyled">
-                <li>
-                  <a href="#">MIT License</a>
-                </li>
-                <li>
-                  <a href="#">Terms &amp; Conditions</a>
-                </li>
-                <li>
-                  <a href="#">Privacy Policy</a>
-                </li>
-                <li>
-                  <a href="#">Contact Us</a>
-                </li>
+          </div>
+          <div class="p-5 sm:w-7/12 border-r text-center">
+              <h3 class="font-bold uppercase text-xl  mb-4">Componentity</h3>
+              <p class=" text-sm mb-10">Lorem Ipsum is simply dummy text of the printing and typesetting
+                  industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+          </div>
+          <div class="p-5 sm:w-3/12">
+              <h3 class="text-xl uppercase font-bold">Contact Us</h3>
+              <ul>
+                  <li class="my-2">
+                      <a class="" href="#">XXX XXXX, Floor 4 San Francisco, CA</a>
+                  </li>
+                  <li class="my-2">
+                      <a class="" href="#">contact@company.com</a>
+                  </li>
               </ul>
+          </div>
+      </div>
+      <div class="flex py-5 m-auto  text-sm flex-col items-center border-t max-w-screen-xl">
+     <div class=" flex gap-5 lg:mb-0">
+              <a href="#">
+                <Icon name="pajamas:twitter" class="text-3xl" />
+              </a>
+              <a href="#">
+                <Icon name="logos:facebook" class="text-3xl" />
+              </a>
+              <a href="#">
+                <Icon name="skill-icons:instagram" class="text-3xl" />
+              </a>
+              <a href="https://github.com/TungLe0319">
+                <Icon name="skill-icons:github-dark" class="text-3xl" />
+              </a>
             </div>
-          </div>
-        </div>
+          <p class="my-5">© Copyright 2023. All Rights Reserved.</p>
       </div>
-      <hr class="border-blueGray-300 my-6">
-      <div
-        class="flex flex-wrap items-center justify-center md:justify-between"
-      >
-        <div class="mx-auto w-full px-4 text-center md:w-4/12">
-          <div class="py-1 text-sm font-semibold">
-            Copyright © <span id="get-current-year">2023 </span>
-            <a href="https://www.creative-tim.com?ref=njs-profile" class="">Tung Le</a>.
-          </div>
-        </div>
-      </div>
-    </div>
+  </div>
   </footer>
 </template>
 
 <style scoped>
-a {
-  @apply text-blue-400 transition-colors hover:text-blue-600;
-}
+
 </style>

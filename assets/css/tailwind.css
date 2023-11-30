@@ -5,5 +5,43 @@
 
 
 img{
-   @apply rounded-md hover:brightness-90 transition-all duration-150 ease-linear shadow-md;
+   @apply  rounded-md hover:brightness-90 transition-all duration-150 ease-linear shadow-md;
 }
+
+
+
+:root {
+  --lavender-blush: #f6e8eaff;
+  --bright-pink-crayola: #ef626cff;
+  --licorice: #22181cff;
+  --jet: #312f2fff;
+  --tiffany-blue: #84dccfff;
+
+  /* Other global styles */
+  --font-family: 'Your Preferred Font', sans-serif;
+}
+
+body {
+  background-color: var(--licorice);
+  color: var(--lavender-blush);
+  font-family: var(--font-family);
+}
+
+h1, h2, h3 {
+  color: var(--bright-pink-crayola);
+}
+
+p {
+  color: var(--tiffany-blue);
+}
+
+a {
+  color: var(--bright-pink-crayola);
+}
+
+button {
+  background-color: var(--bright-pink-crayola);
+  color: var(--jet);
+}
+
+/* Add more specific styling for other elements as needed */

@@ -1,38 +1,44 @@
 <script lang="ts" setup></script>
 
 <template>
-  <div class="bg-gray-100">
-    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-      <div
-        class="overflow-hidden rounded-lg bg-amber-400 shadow-xl lg:grid lg:grid-cols-2 lg:gap-4"
-      >
-        <div
-          class="lg:py- px-6 pb-16 pt-10 sm:px-16 sm:pt-16 lg:px-24 xl:px-36 xl:py-24"
-        >
-          <div class="flex flex-col items-start space-y-4 lg:self-center">
-            <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
-              <span class="block">Ready to dive in?</span>
-              <span class="block">Start your free trial today.</span>
-            </h2>
-            <p class="mt-4 text-lg leading-6">
-              Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
-              Malesuada adipiscing sagittis vel nulla nec. Urna, sed a lectus
-              elementum blandit et.
-            </p>
-            <button class="">
-              <a href="#" class="">Contact us</a>
-            </button>
-          </div>
-        </div>
-        <div class="aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1 -mt-6">
-          <img
-            class="translate-x-6 translate-y-6 transform rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-16"
-            src="https://tailwindui.com/img/component-images/full-width-with-sidebar.jpg"
-            alt="App screenshot"
-          >
-        </div>
+  <div class="relative py-16">
+
+      <div aria-hidden="true"
+          class="absolute inset-0 h-max w-full m-auto grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20">
+          <div class="blur-[106px] h-56 bg-gradient-to-br from-teal-500 to-purple-400 dark:from-blue-700"></div>
+          <div class="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"></div>
       </div>
-    </div>
+
+      <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+          <div class="relative">
+            
+              <div class="flex items-center justify-center -space-x-2">
+                  <img loading="lazy" width="400" height="400" src="https://randomuser.me/api/portraits/women/12.jpg" alt="member photo" class="h-8 w-8 rounded-full object-cover">
+                  <img loading="lazy" width="200" height="200" src="https://randomuser.me/api/portraits/women/45.jpg" alt="member photo" class="h-12 w-12 rounded-full object-cover">
+                  <img loading="lazy" width="200" height="200" src="https://randomuser.me/api/portraits/women/60.jpg" alt="member photo" class="z-10 h-16 w-16 rounded-full object-cover">
+                  <img loading="lazy" width="200" height="200" src="https://randomuser.me/api/portraits/women/4.jpg" alt="member photo" class="relative h-12 w-12 rounded-full object-cover">
+                  <img loading="lazy" width="200" height="200" src="https://randomuser.me/api/portraits/women/34.jpg" alt="member photo" class="h-8 w-8 rounded-full object-cover">
+              </div>
+
+              <div class="mt-6 m-auto space-y-6 md:w-8/12 lg:w-7/12">
+                  <h1 class="text-center text-4xl font-bold text-gray-800 dark:text-white md:text-5xl">Get Started now
+                  </h1>
+                  <p class="text-center text-xl text-gray-600 dark:text-gray-300">
+                      Be part of millions people around the world using tailus in modern User Interfaces.
+                  </p>
+                  <div class="flex flex-wrap justify-center gap-6">
+                    <LeButton class="rounded-full">
+                    Get Started
+                    </LeButton>
+                    <LeButton variant="outlined" class="  text-[var(--bright-pink-crayola)] rounded-full border-[var(--bright-pink-crayola)] flex items-center justify-center  gap-2">
+                      <span>More About</span>
+                      <Icon name="mdi:arrow-right-bold-box-outline" size="25" />
+        </LeButton>
+                  </div>
+              </div>
+          </div>
+      </div>
+
   </div>
 </template>
 

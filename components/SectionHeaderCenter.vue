@@ -10,7 +10,7 @@ defineProps(['header', 'title', 'content'])
     <h1 class="font-serif text-2xl font-bold lg:text-5xl">
       {{ title }}
     </h1>
-    <div class="w-full px-10 text-start lg:w-1/2 lg:px-0 lg:text-center">
+    <div class="w-full px-10 font-medium text-start lg:w-1/2 lg:px-0 lg:text-center">
       <p>{{ content }}</p>
     </div>
   </div>

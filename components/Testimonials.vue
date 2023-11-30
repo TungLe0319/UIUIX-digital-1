@@ -63,20 +63,20 @@ const testimonials = ref([
 </script>
 
 <template>
-  <div class="">
+  <div class="p-4">
     <SectionHeader
       header="What People think" title="Testimonials"
       content="Lorem ipsum dolor sit amet consectetur adipisicing elit. , accusantium distinctio ea autem eligendi maiores natus dolorem. "
     />
     <div class="grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-5">
-      <div v-for="t in testimonials" :key="t.username" class=" my-2 card bg-base-100 p-0.5 h-fit  glass  ">
-        <div class="p-4 bg-zinc-900 hover:bg-zinc-800 rounded  shadow-xl transition-all  duration-150 ease-linear group">
+      <div v-for="t in testimonials" :key="t.username" class=" rounded-md my-2 card bg-base-100 p-0.5 h-fit  glass  ">
+        <div class="p-4 bg-[var(--jet)] hover:bg-zinc-800 rounded  shadow-xl transition-all  duration-150 ease-linear group">
           <div class="flex items-center space-x-4 justify-start mb-4">
             <div
               class="avatar p-0.5 bg-accent shadow-md mask mask-hexagon scale-150 -translate-x-4 -translate-y-4 duration-300"
             >
               <div class="w-12 mask mask-hexagon">
-                <img :src="t.image" :alt="t.username">
+                <img :src="t.image" :alt="t.username" class="rounded">
               </div>
             </div>
             <p class="text-neutral-content font-bold">
@@ -85,12 +85,12 @@ const testimonials = ref([
           </div>
           <div class="flex flex-col space-y-2 text-start">
             <p class="text-neutral-content ">
-              <Icon name="mdi:format-quote-open" class="text-2xl text-accent" /> {{ t.comment }}
+              <Icon name="mdi:format-quote-open" class="text-2xl " /> {{ t.comment }}
             </p>
           </div>
         </div>
       </div>
-      <div v-auto-animate />
+      <div />
     </div>
   </div>
 </template>
