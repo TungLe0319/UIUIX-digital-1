@@ -1,9 +1,13 @@
+<script lang="ts" setup></script>
+
 <template>
   <footer class="bg-blueGray-200 relative pb-6 pt-8">
     <div class="container mx-auto px-4">
       <div class="flex flex-wrap text-left lg:text-left">
         <div class="w-full px-4 lg:w-6/12">
-          <h4 class="font-serif text-3xl font-bold">Let's keep in touch!</h4>
+          <h4 class="font-serif text-3xl font-bold">
+            Let's keep in touch!
+          </h4>
           <h5 class="text-blueGray-600 mb-2 mt-0 text-lg">
             Find us on any of these platforms
           </h5>
@@ -25,9 +29,7 @@
         <div class="w-full px-4 lg:w-6/12">
           <div class="items-top mb-6 flex flex-wrap">
             <div class="ml-auto w-full px-4 lg:w-4/12">
-              <span class="text-md mb-2 block font-bold uppercase"
-                >Useful Links</span
-              >
+              <span class="text-md mb-2 block font-bold uppercase">Useful Links</span>
               <ul class="list-unstyled">
                 <li>
                   <a href="#">About Us</a>
@@ -44,9 +46,7 @@
               </ul>
             </div>
             <div class="w-full px-4 lg:w-4/12">
-              <span class="text-md mb-2 block font-bold uppercase"
-                >Other Resources</span
-              >
+              <span class="text-md mb-2 block font-bold uppercase">Other Resources</span>
               <ul class="list-unstyled">
                 <li>
                   <a href="#">MIT License</a>
@@ -65,24 +65,20 @@
           </div>
         </div>
       </div>
-      <hr class="border-blueGray-300 my-6" />
+      <hr class="border-blueGray-300 my-6">
       <div
         class="flex flex-wrap items-center justify-center md:justify-between"
       >
         <div class="mx-auto w-full px-4 text-center md:w-4/12">
           <div class="py-1 text-sm font-semibold">
             Copyright © <span id="get-current-year">2023 </span>
-            <a href="https://www.creative-tim.com?ref=njs-profile" class=""
-              >Tung Le</a
-            >.
+            <a href="https://www.creative-tim.com?ref=njs-profile" class="">Tung Le</a>.
           </div>
         </div>
       </div>
     </div>
   </footer>
 </template>
-
-<script lang="ts" setup></script>
 
 <style scoped>
 a {

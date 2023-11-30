@@ -1,3 +1,5 @@
+<script lang="ts" setup></script>
+
 <template>
   <SectionHeaderCenter
     title="What we provide"
@@ -9,8 +11,10 @@ impedit veniam voluptate culpa iste at quibusdam, facilis fugit expedita?"
     <div
       class="flex flex-col items-center justify-center space-y-5 rounded-lg bg-slate-950 p-8 text-center text-white shadow-xl"
     >
-      <Icon name="uil:medal" color="white" :size="'100'" />
-      <p class="text-2xl font-bold">Web Development</p>
+      <Icon name="uil:medal" color="white" size="100" />
+      <p class="text-2xl font-bold">
+        Web Development
+      </p>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nemo
         corrupti esse, eveniet quos dignissimos, accusantium soluta, commodi
@@ -19,7 +23,7 @@ impedit veniam voluptate culpa iste at quibusdam, facilis fugit expedita?"
       </p>
       <button>
         <span> Learn More</span>
-        <Icon name="uil:arrow-right" color="white" :size="'30'" />
+        <Icon name="uil:arrow-right" color="white" size="30" />
       </button>
     </div>
     <div
@@ -28,9 +32,11 @@ impedit veniam voluptate culpa iste at quibusdam, facilis fugit expedita?"
       <Icon
         name="material-symbols:developer-mode-tv-outline-rounded"
         color="white"
-        :size="'100'"
+        size="100"
       />
-      <p class="text-2xl font-bold">Web Development</p>
+      <p class="text-2xl font-bold">
+        Web Development
+      </p>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nemo
         corrupti esse, eveniet quos dignissimos, accusantium soluta, commodi
@@ -39,14 +45,16 @@ impedit veniam voluptate culpa iste at quibusdam, facilis fugit expedita?"
       </p>
       <button>
         <span> Learn More</span>
-        <Icon name="uil:arrow-right" color="white" :size="'30'" />
+        <Icon name="uil:arrow-right" color="white" size="30" />
       </button>
     </div>
     <div
       class="flex flex-col items-center justify-center space-y-5 rounded-lg bg-slate-950 p-8 text-center text-white shadow-xl"
     >
-      <Icon name="ep:service" color="white" :size="'100'" />
-      <p class="text-2xl font-bold">Web Development</p>
+      <Icon name="ep:service" color="white" size="100" />
+      <p class="text-2xl font-bold">
+        Web Development
+      </p>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nemo
         corrupti esse, eveniet quos dignissimos, accusantium soluta, commodi
@@ -55,12 +63,10 @@ impedit veniam voluptate culpa iste at quibusdam, facilis fugit expedita?"
       </p>
       <button>
         <span> Learn More</span>
-        <Icon name="uil:arrow-right" color="white" :size="'30'" />
+        <Icon name="uil:arrow-right" color="white" size="30" />
       </button>
     </div>
   </div>
 </template>
-
-<script lang="ts" setup></script>
 
 <style></style>

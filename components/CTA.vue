@@ -1,3 +1,5 @@
+<script lang="ts" setup></script>
+
 <template>
   <div class="bg-gray-100">
     <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
@@ -27,13 +29,11 @@
             class="translate-x-6 translate-y-6 transform rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-16"
             src="https://tailwindui.com/img/component-images/full-width-with-sidebar.jpg"
             alt="App screenshot"
-          />
+          >
         </div>
       </div>
     </div>
   </div>
 </template>
-
-<script lang="ts" setup></script>
 
 <style></style>

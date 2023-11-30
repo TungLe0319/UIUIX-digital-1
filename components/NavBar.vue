@@ -1,75 +1,73 @@
 <script setup lang="ts">
-import { ref, onMounted, onBeforeUnmount } from "vue";
+import { onBeforeUnmount, onMounted, ref } from 'vue'
 
 // const { session } = useAuth();
-const navTransform = ref("translateY(0)");
+const navTransform = ref('translateY(0)')
 
-let lastScrollPosition = 0;
+let lastScrollPosition = 0
 
-const route = useRoute();
-route.path;
+const route = useRoute()
+route.path
 
 function handleScroll() {
-  const scrollY = window.scrollY;
-  navTransform.value =
-    scrollY > lastScrollPosition ? "translateY(-100%)" : "translateY(0)";
-  lastScrollPosition = scrollY;
+  const scrollY = window.scrollY
+  navTransform.value
+    = scrollY > lastScrollPosition ? 'translateY(-100%)' : 'translateY(0)'
+  lastScrollPosition = scrollY
 }
 
 function handleIndicator(el: HTMLElement) {
-  const indicator = document.querySelector(".nav-indicator") as HTMLElement;
-  const items = document.querySelectorAll(".nav-item");
+  const indicator = document.querySelector('.nav-indicator') as HTMLElement
+  const items = document.querySelectorAll('.nav-item')
 
   items.forEach((item) => {
-    item.classList.remove("is-active");
-    item.removeAttribute("style");
-  });
+    item.classList.remove('is-active')
+    item.removeAttribute('style')
+  })
 
-  indicator.style.width = `${el.offsetWidth}px`;
-  indicator.style.left = `${el.offsetLeft}px`;
+  indicator.style.width = `${el.offsetWidth}px`
+  indicator.style.left = `${el.offsetLeft}px`
 
-  const activeColor = el.getAttribute("active-color");
+  const activeColor = el.getAttribute('active-color')
   if (activeColor !== null) {
-    indicator.style.backgroundColor = activeColor;
-    el.style.color = activeColor;
+    indicator.style.backgroundColor = activeColor
+    el.style.color = activeColor
   }
 
-  el.classList.add("is-active");
+  el.classList.add('is-active')
 }
 
 interface HTMLElementWithActiveClass extends HTMLElement {
   classList: DOMTokenList & {
-    contains(token: string): boolean;
-  };
+    contains(token: string): boolean
+  }
 }
 // Function to setup listeners
-const setupIndicatorListeners = () => {
-  const items: NodeListOf<HTMLElement> = document.querySelectorAll(".nav-item");
-  const indicator: HTMLElement | null =
-    document.querySelector(".nav-indicator");
+function setupIndicatorListeners() {
+  const items: NodeListOf<HTMLElement> = document.querySelectorAll('.nav-item')
+  const indicator: HTMLElement | null
+    = document.querySelector('.nav-indicator')
 
   items.forEach((item: HTMLElement) => {
-    if (item.getAttribute("href") === route.path) {
-      item.classList.add("is-active");
-      handleIndicator(item);
+    if (item.getAttribute('href') === route.path) {
+      item.classList.add('is-active')
+      handleIndicator(item)
     }
-    item.addEventListener("click", (e) =>
-      handleIndicator(e.target as HTMLElement),
-    );
-    if ((item as HTMLElementWithActiveClass).classList.contains("is-active")) {
-      handleIndicator(item);
-    }
-  });
-};
+    item.addEventListener('click', e =>
+      handleIndicator(e.target as HTMLElement))
+    if ((item as HTMLElementWithActiveClass).classList.contains('is-active'))
+      handleIndicator(item)
+  })
+}
 
 onMounted(() => {
-  window.addEventListener("scroll", handleScroll);
-  setupIndicatorListeners();
-});
+  window.addEventListener('scroll', handleScroll)
+  setupIndicatorListeners()
+})
 
 onBeforeUnmount(() => {
-  window.removeEventListener("scroll", handleScroll);
-});
+  window.removeEventListener('scroll', handleScroll)
+})
 </script>
 
 <template>
@@ -83,19 +81,18 @@ onBeforeUnmount(() => {
       <span class="text-xl">Brand</span>
     </div>
     <div class="relative hidden w-fit overflow-hidden lg:inline-flex">
-      <NuxtLink href="/" class="nav-item is-active" active-color="orange"
-        >Home</NuxtLink
-      >
-      <NuxtLink href="/about" class="nav-item" active-color="orange"
-        >About</NuxtLink
-      >
-      <NuxtLink href="/contact" class="nav-item" active-color="orange"
-        >Contact</NuxtLink
-      >
-      <span class="nav-indicator"></span>
+      <NuxtLink href="/" class="nav-item is-active" active-color="orange">
+        Home
+      </NuxtLink>
+      <NuxtLink href="/about" class="nav-item" active-color="orange">
+        About
+      </NuxtLink>
+      <NuxtLink href="/contact" class="nav-item" active-color="orange">
+        Contact
+      </NuxtLink>
+      <span class="nav-indicator" />
     </div>
     <div class="flex items-center justify-center space-x-4">
-      
       <a href="https://github.com/TungLe0319">
         <Icon name="skill-icons:github-dark" class="text-3xl" />
       </a>

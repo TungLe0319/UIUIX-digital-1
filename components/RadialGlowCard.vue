@@ -1,3 +1,57 @@
+<script lang="ts" setup>
+const features = [
+  {
+    icon: 'i-heroicons-banknotes-solid',
+    title: ' Lorem ipsum dolor sit amet.',
+    content:
+      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptatem minima ex harum accusantium itaque dignissimos fugiat magnam repudiandae accusamus?',
+  },
+  {
+    icon: 'i-heroicons-banknotes-solid',
+    title: ' Lorem ipsum dolor sit amet.',
+    content:
+      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptatem minima ex harum accusantium itaque dignissimos fugiat magnam repudiandae accusamus?',
+  },
+  {
+    icon: 'i-heroicons-banknotes-solid',
+    title: ' Lorem ipsum dolor sit amet.',
+    content:
+      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptatem minima ex harum accusantium itaque dignissimos fugiat magnam repudiandae accusamus?',
+  },
+  {
+    icon: 'i-heroicons-banknotes-solid',
+    title: ' Lorem ipsum dolor sit amet.',
+    content:
+      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptatem minima ex harum accusantium itaque dignissimos fugiat magnam repudiandae accusamus?',
+  },
+  {
+    icon: 'i-heroicons-banknotes-solid',
+    title: ' Lorem ipsum dolor sit amet.',
+    content:
+      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptatem minima ex harum accusantium itaque dignissimos fugiat magnam repudiandae accusamus?',
+  },
+  {
+    icon: 'i-heroicons-banknotes-solid',
+    title: ' Lorem ipsum dolor sit amet.',
+    content:
+      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptatem minima ex harum accusantium itaque dignissimos fugiat magnam repudiandae accusamus?',
+  },
+]
+
+onMounted(() => {
+  const featuresEl = document.querySelector('.features')
+  const featureEls = document.querySelectorAll('.feature')
+  featuresEl!.addEventListener('pointermove', (ev) => {
+    featureEls.forEach((featureEl) => {
+      // Not optimized yet, I know
+      const rect = featureEl.getBoundingClientRect()
+      featureEl.style.setProperty('--x', ev.clientX - rect.left)
+      featureEl.style.setProperty('--y', ev.clientY - rect.top)
+    })
+  })
+})
+</script>
+
 <template>
   <div class="flex w-full flex-col items-center justify-center">
     <LandingSection title="What we offer" headline="Features" />
@@ -12,60 +66,6 @@
     </div>
   </div>
 </template>
-
-<script lang="ts" setup>
-const features = [
-  {
-    icon: "i-heroicons-banknotes-solid",
-    title: " Lorem ipsum dolor sit amet.",
-    content:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptatem minima ex harum accusantium itaque dignissimos fugiat magnam repudiandae accusamus?",
-  },
-  {
-    icon: "i-heroicons-banknotes-solid",
-    title: " Lorem ipsum dolor sit amet.",
-    content:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptatem minima ex harum accusantium itaque dignissimos fugiat magnam repudiandae accusamus?",
-  },
-  {
-    icon: "i-heroicons-banknotes-solid",
-    title: " Lorem ipsum dolor sit amet.",
-    content:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptatem minima ex harum accusantium itaque dignissimos fugiat magnam repudiandae accusamus?",
-  },
-  {
-    icon: "i-heroicons-banknotes-solid",
-    title: " Lorem ipsum dolor sit amet.",
-    content:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptatem minima ex harum accusantium itaque dignissimos fugiat magnam repudiandae accusamus?",
-  },
-  {
-    icon: "i-heroicons-banknotes-solid",
-    title: " Lorem ipsum dolor sit amet.",
-    content:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptatem minima ex harum accusantium itaque dignissimos fugiat magnam repudiandae accusamus?",
-  },
-  {
-    icon: "i-heroicons-banknotes-solid",
-    title: " Lorem ipsum dolor sit amet.",
-    content:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptatem minima ex harum accusantium itaque dignissimos fugiat magnam repudiandae accusamus?",
-  },
-];
-
-onMounted(() => {
-  const featuresEl = document.querySelector(".features");
-  const featureEls = document.querySelectorAll(".feature");
-  featuresEl!.addEventListener("pointermove", (ev) => {
-    featureEls.forEach((featureEl) => {
-      // Not optimized yet, I know
-      const rect = featureEl.getBoundingClientRect();
-      featureEl.style.setProperty("--x", ev.clientX - rect.left);
-      featureEl.style.setProperty("--y", ev.clientY - rect.top);
-    });
-  });
-});
-</script>
 
 <style scoped>
 *,
